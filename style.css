@@ -8,25 +8,41 @@
     font-style: normal;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-image: url(assets/homepage-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: Poppins;
     min-width: 1000px;
     width: auto !important;
 }
 
+.header{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/homepage-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .parentNav{
     position: fixed;
     margin-left: 4%;
-    top: 0px;
+    top: 10px;
     width: 90%;
     z-index: 1;
-    background-color: #caf2ff;
+    background-color: rgb(202 242 255 0.95);
     border-radius: 100px;
+    backdrop-filter: saturate(115%) blur(5px);
 }
 
+.parentNav a {
+    text-decoration: none;
+}
 
 .logo-container{
     display: flex;
@@ -68,6 +84,13 @@ nav a {
     font-size: 20px;
 }
 
+
+.parentNav a:hover {
+    font-weight: 700;
+    color: #59a39b;
+    transition: all 0.3s ease;
+}
+
 .connect{
     font-family: Poppins;
     background-color: #7accc3;
@@ -95,7 +118,9 @@ nav a {
     width: 35%;
     position: relative;
     text-align: left;
-    padding: 12% 50px;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .homepage-body p {
@@ -109,10 +134,24 @@ nav a {
     letter-spacing: normal;
 }
 
+.icons i{
+    padding-left: 5%;
+    padding-top: 50px;
+    font-size: 70px;
+    color: #263238;
+    margin-right: -20px;
+    text-decoration: none;
+}
+
+.icons i:hover{
+    font-weight: 700;
+    color: #59a39b;
+    transition: all 0.3s ease;
+}
 
 /*Colored Text*/
 .yellow-text{
-    color:#ffa10e;
+    color:rgb(255, 161, 14);
     
 }
 
@@ -125,10 +164,126 @@ nav a {
     color: #7accc3;
 }
 
-.flex-item {
-}
 
 .flex-container {
     display: flex;
     flex-direction: row;
+}
+
+/*About Section*/
+.profile-holder{
+    padding-left: 100px;
+}
+
+.about-body{
+    padding-top: 400px;
+    padding-left: 70px;
+    padding-bottom: 200px;
+}
+
+.about-text{
+    padding-top: 70px;
+    padding-left: 70px;
+}
+
+.about-text h1 {
+    font-family: Brasika;
+    color: #f8eded;
+    font-size: 100px;
+    letter-spacing: 4px;
+}
+
+.about-text p{
+    margin-top: -15px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 24px;
+    max-width: 90%;
+}
+
+/*Projects*/
+.projects{
+    background-color: #fffffa;
+    margin-bottom: 150px;
+
+}
+
+.section-header{
+    margin: auto;
+    padding-top: 40px;
+}
+
+.section-header h1{
+    font-family: Brasika;
+    font-size: 70px;
+    letter-spacing: 2px;
+    color: #263238;
+}
+
+.project-card{
+    border-radius: 50px;
+    margin: 25px 50px;
+    width: 45%;
+    height: 650px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blue{
+    background-color: #aaebe3;
+}
+
+.red{
+    background-color: #ff7174;
+}
+
+.yellow{
+    background-color: #ffd981;
+}
+
+.purple{
+    background-color: #9b96c1;
+}
+
+.project-card h2{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Brasika;
+    font-size: 35px;
+}
+
+.project-card h3{
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.project-card p{
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.project-card span {
+    font-style: italic;
+}
+
+.project-card img{
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 40px;
+    width: 90%;
+    stroke: #263238;
+    stroke-width: 1px;
+
+}
+
+.project-card a {
+    text-decoration: none;
+    font-style: italic;
+    color: #263238;
+}
+
+.project-card a:hover{
+    font-weight: 600;
 }

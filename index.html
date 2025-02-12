@@ -5,38 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="assets/mushroom-logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Mykology</title>
   </head>
   <body>
     <!--Navigation Bar-->
-    <div class="parentNav">
-      <header>
-        <div class="logo-container">
-          <img src="assets/mushroom-logo.png" alt="logo" />
-          <h1 class="logo-name">Myko Javier</h1>
-        </div>
-        <nav>
-          <a href="">About me</a>
-          <a href="">Resume</a>
-          <a href="">Work</a>
-          <button class="connect button">Get in touch!</button>
-        </nav>
-      </header>
-    </div>
+    <section class="header">
+        <div class="parentNav" >
+            <header>
+              <a href="#home"
+                ><div class="logo-container">
+                  <img src="assets/mushroom-logo.png" alt="logo" />
+                  <h1 class="logo-name">Myko Javier</h1>
+                </div></a>
+      
+              <nav>
+                <a href="#about">About me</a>
+                <a href="https://drive.google.com/file/d/1zqJvxA-16rbkm7aPoFO9aWkjb6fA22_c/view?usp=sharing">Resume</a>
+                <a href="#project">Projects</a>
+                <a href="mailto:mjefferson.mjavier@gmail.com" class="connect button">Get in touch!</a>
+              </nav>
+            </header>
+          </div>
+      
+          <!-- Main Body -->
+          <div class="homepage-body" id="home">
+            <p>
+              <span class="red-text">Aspiring</span><br /><span class="yellow-text"
+                >UI/UX Designer</span
+              ><br />& Web Developer
+            </p>
+          </div>
 
-    <!-- Main Body -->
-    <div class="homepage-body">
-      <p>
-        <span class="red-text">Aspiring</span><br/><span class="yellow-text"
-          >UI/UX Designer</span
-        ><br />& Web Developer
-      </p>
-    </div>
-
-    <div class="about-body flex-container">
-        <div class="flex-item">
-            <img src="assets/profile.png" alt="">
+          <div class="icons">
+            <a href="https://www.facebook.com/mykojefferson.javier"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/0.ykm_"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/myko-javier/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/mmjavier"><i class="fa fa-github"></i></a>
+          </div>
+      
+          <div class="about-body flex-container" id="about">
+                <div>
+                    <img src="assets/profile.png" alt="" />
+                </div>
+                <div class="about-text">
+                    <h1>Hello, I'm Myko !</h1>
+                    <p>Highly motivated and academically accomplished computer science student studying in UP Los Banos, with a strong
+                        commitment to learning new languages and technologies. Competent in programming languages including Python,
+                        C, and Java, with sufficient knowledge on web development tools including HTML, CSS, and JavaScript. Experiences
+                        include coding, troubleshooting, and designing my own personal projects.</p>
+                </div>
         </div>
-    </div>
+        </div>
+    </section>
+    <section class="projects" id="project">
+        <div class="flex-container">
+            <div class="section-header">
+                <h1>✨ Projects ✨</h1>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="project-card yellow">
+                <h2>YSYNC ↪️</h2>
+                <h3>Backend Developer | <a href="https://github.com/mmjavier/YSYNC_Project_PAD.git"><span>github.com/mmjavier/YSYNC_Project_PAD</span></a></h3>
+                <p>Designed the mentor choosing algorithm, utilizing weighted edge graphs for mentor-mentee matching</p>
+                <img src="assets/ysync-jpad.png" alt="YSYNC">
+            </div>
+            <div class="project-card blue">
+                <h2>AnI | Appcon</h2>
+                <h3>Frontend Lead </h3>
+                <p>Designed the wireframe for the Log-in and Landing Pages + main dashboard page</p>
+                <img src="assets/ani.png" alt="AnI">
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="project-card red">
+                <h2>Passenger Rush ↪️</h2>
+                <h3>Game Developer | <a href="https://github.com/mmjavier/CMSC22_Final_Proj.git"><span>github.com/mmjavier/CMSC22_Final_Proj</span></a></h3>
+                <p>Worked on the implementation of power-ups and the collision detection logic of the game</p>
+                <img src="assets/passenger-rush.png" alt="YSYNC">
+            </div>
+            <div class="project-card purple">
+                <h2>Nutrivise ↪️</h2>
+                <h3>Full Stack Developer | <a href="https://github.com/mmjavier/NutriVise-App.git"><span>github.com/mmjavier/NutriVise-App</span></a></h3>
+                <p>Developed a diet solver application utilizing Simplex Method, with R and Shiny </p>
+                <img src="assets/ysync-jpad.png" alt="YSYNC">
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+
+    </section>
   </body>
 </html>
